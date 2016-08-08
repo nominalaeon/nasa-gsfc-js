@@ -1,0 +1,379 @@
+/**
+ * Paths
+ * Sizes
+ */
+/*=============================
+=            Paths            =
+=============================*/
+/*=============================
+=            Sizes            =
+=============================*/
+/*============================================================
+=            Sizes calculated from base variables            =
+============================================================*/
+/* line 2, ../../scss/_general.scss */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 7, ../../scss/_general.scss */
+body {
+  color: #4d4d5e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  overflow: auto;
+}
+/* line 14, ../../scss/_general.scss */
+body * {
+  box-sizing: border-box;
+  letter-spacing: 0.0625em;
+}
+
+/* line 20, ../../scss/_general.scss */
+a {
+  color: #1a9cff;
+}
+/* line 22, ../../scss/_general.scss */
+a:hover {
+  color: #76c4ff;
+  transition: .2s ease-in-out background-color;
+}
+
+/* line 28, ../../scss/_general.scss */
+h1, h2, h3, h4, p {
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+/* line 34, ../../scss/_general.scss */
+h1 {
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
+/* line 38, ../../scss/_general.scss */
+h2, .h2 {
+  font-size: 33px;
+}
+
+/* line 41, ../../scss/_general.scss */
+h3, .h3 {
+  font-size: 25px;
+}
+
+/* line 44, ../../scss/_general.scss */
+h4, .h4 {
+  font-size: 19px;
+}
+
+/* line 48, ../../scss/_general.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 52, ../../scss/_general.scss */
+p {
+  margin-bottom: 15px;
+}
+
+/*===============================
+=            Classes            =
+===============================*/
+/* line 60, ../../scss/_general.scss */
+.nasa-branding {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 65, ../../scss/_general.scss */
+.nasa-branding > div {
+  align-items: center;
+  display: flex;
+  height: 82px;
+  justify-content: flex-end;
+}
+/* line 71, ../../scss/_general.scss */
+.nasa-branding > div:first-child {
+  border-right: 1px solid #c2c2c8;
+  margin-right: -12.5px;
+  padding-right: 15px;
+}
+/* line 76, ../../scss/_general.scss */
+.nasa-branding > div:last-child {
+  padding-left: 30px;
+}
+/* line 80, ../../scss/_general.scss */
+.nasa-branding img {
+  width: 107px;
+  height: 107px;
+  margin-right: -12.5px;
+}
+/* line 84, ../../scss/_general.scss */
+.nasa-branding p {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+/* line 2, ../../scss/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 6, ../../scss/_helpers.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 9, ../../scss/_helpers.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 13, ../../scss/_helpers.scss */
+.transition-disabler * {
+  transition: none !important;
+}
+
+/* line 2, ../../scss/_layout.scss */
+.content-wrapper {
+  padding-left: 164px;
+}
+
+/* line 6, ../../scss/_layout.scss */
+.content {
+  padding-right: 60px;
+}
+
+/* line 2, ../../scss/_header.scss */
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  padding-bottom: 60px;
+  max-width: 1200px;
+}
+
+/* line 2, ../../scss/_images.scss */
+.images {
+  padding: 15px 0;
+}
+
+/* line 6, ../../scss/_images.scss */
+div.images__image {
+  background-color: #000018;
+  min-height: 60vh;
+  margin-right: 4%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 14, ../../scss/_images.scss */
+div.images__image:last-child {
+  margin-left: 0;
+}
+/* line 18, ../../scss/_images.scss */
+div.images__image h3 {
+  color: #fff;
+  position: absolute;
+  bottom: 7.5px;
+  text-align: center;
+  width: 100%;
+}
+/* line 26, ../../scss/_images.scss */
+div.images__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 5, ../../scss/_nav.scss */
+.nav {
+  background-color: #0066b3;
+  height: 100vh;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 112px;
+  z-index: 999;
+}
+/* line 14, ../../scss/_nav.scss */
+.nav::after {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkNGQ1ZSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZDRkNWUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(77, 77, 94, 0)), color-stop(100%, #4d4d5e));
+  background-image: -moz-linear-gradient(left, rgba(77, 77, 94, 0), #4d4d5e);
+  background-image: -webkit-linear-gradient(left, rgba(77, 77, 94, 0), #4d4d5e);
+  background-image: linear-gradient(to right, rgba(77, 77, 94, 0), #4d4d5e);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+}
+
+/* line 24, ../../scss/_nav.scss */
+.nav__menu,
+.sub-nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, ../../scss/_nav.scss */
+.nav__item {
+  height: auto;
+  width: 112px;
+}
+
+/* line 36, ../../scss/_nav.scss */
+.nav__link,
+.sub-nav__link {
+  color: #fff;
+  font-weight: 100;
+}
+/* line 40, ../../scss/_nav.scss */
+.nav__link:hover,
+.sub-nav__link:hover {
+  color: #fff;
+}
+
+/* line 45, ../../scss/_nav.scss */
+.nav__link {
+  margin: 0;
+  padding: 15px 0;
+  padding-top: 82px;
+  position: relative;
+  text-align: center;
+  width: 112px;
+}
+/* line 53, ../../scss/_nav.scss */
+.nav__link:active, .nav__link:focus, .nav__link:hover, .nav__link.active {
+  background-color: rgba(0, 58, 103, 0.6);
+  color: #fff;
+}
+/* line 60, ../../scss/_nav.scss */
+.nav__link.active {
+  background-color: #003a67;
+  outline: none;
+}
+/* line 65, ../../scss/_nav.scss */
+.nav__link::before {
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 54px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 75, ../../scss/_nav.scss */
+.nav__item--home .nav__link::before {
+  content: '\f015';
+}
+
+/* line 80, ../../scss/_nav.scss */
+.nav__item--tags .nav__link::before {
+  content: '\f02c';
+}
+
+/*================================
+=            Sub Menu            =
+================================*/
+/* line 89, ../../scss/_nav.scss */
+.sub-nav__menu {
+  background-color: #c2c2c8;
+  border-bottom: 1px solid #003a67;
+}
+
+/* line 94, ../../scss/_nav.scss */
+.sub-nav__item {
+  padding: 15px 7.5px;
+  text-align: center;
+}
+
+/* line 99, ../../scss/_nav.scss */
+a.sub-nav__link {
+  background-color: #003a67;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: .9em;
+  min-height: 30px;
+  line-height: 15px;
+  overflow: hidden;
+  padding: 7.5px;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* line 2, ../../scss/_tags.scss */
+.tag-list {
+  background-color: #e5e5e7;
+  border-right: 1px solid #9999a3;
+  list-style: none;
+  margin: 0;
+  overflow-x: scroll;
+  padding: 15px;
+  padding-bottom: 0;
+  position: relative;
+  white-space: nowrap;
+}
+/* line 13, ../../scss/_tags.scss */
+.tag-list li {
+  -moz-box-shadow: #000018 0 1px 2px;
+  -webkit-box-shadow: #000018 0 1px 2px;
+  box-shadow: #000018 0 1px 2px;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  line-height: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 7.5px 15px;
+  position: relative;
+}
+/* line 24, ../../scss/_tags.scss */
+.tag-list li:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #c2c2c8;
+  cursor: pointer;
+  transform: translateY(1px);
+}
+/* line 31, ../../scss/_tags.scss */
+.tag-list .active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #0aa32d;
+  transform: translateY(1px);
+}
+/* line 35, ../../scss/_tags.scss */
+.tag-list .active:hover {
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #ef3e42;
+}
+/* line 40, ../../scss/_tags.scss */
+.tag-list .inactive {
+  background-color: #9999a3;
+}

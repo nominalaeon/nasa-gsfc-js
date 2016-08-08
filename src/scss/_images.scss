@@ -1,0 +1,31 @@
+
+.images {
+    padding: $N 0;
+}
+
+div.images__image {
+    background-color: $grey--dark;
+    min-height: 60vh;
+    margin-right: 4%;
+    margin-bottom: $N;
+    overflow: hidden;
+    position: relative;
+
+    &:last-child {
+        margin-left: 0;
+    }
+
+    h3 {
+        color: $white;
+        position: absolute;
+        bottom: $N / 2;
+        text-align: center;
+        width: 100%;
+    }
+
+    img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

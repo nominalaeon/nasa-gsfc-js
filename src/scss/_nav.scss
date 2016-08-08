@@ -1,0 +1,114 @@
+
+
+$nav-width: $S + $margin;
+
+.nav {
+    background-color: $primary;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+    top: 0; left: 0;
+    width: $nav-width;
+    z-index: 999;
+
+    &::after {
+        @include background-image(linear-gradient(to right, rgba($grey, 0), $grey));
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; right: 0; bottom: 0;
+        width: 6px;
+    }
+}
+
+.nav__menu,
+.sub-nav__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    height: auto;
+    width: $nav-width;
+}
+
+.nav__link,
+.sub-nav__link {
+    color: $white;
+    font-weight: 100;
+    &:hover {
+        color: $white;
+    }
+}
+
+.nav__link {
+    margin: 0;
+    padding: $N 0;
+    padding-top: $S;
+    position: relative;
+    text-align: center;
+    width: $nav-width;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &.active {
+        background-color: rgba($blue--dark, .6);
+        color: $white;
+    }
+    &.active {
+        background-color: $blue--dark;
+        outline: none;
+    }
+
+    &::before {
+        display: block;
+        font-family: 'FontAwesome';
+        font-size: $nav-icon-size;
+        position: absolute;
+        top: $N; left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.nav__item--home {
+    .nav__link::before {
+        content: '\f015';
+    }
+}
+.nav__item--tags {
+    .nav__link::before {
+        content: '\f02c';
+    }
+}
+
+/*================================
+=            Sub Menu            =
+================================*/
+
+.sub-nav__menu {
+    background-color: $grey--lighter;
+    border-bottom: 1px solid $blue--dark;
+}
+
+.sub-nav__item {
+    padding: $N ($N / 2);
+    text-align: center;
+}
+
+a.sub-nav__link {
+    background-color: $blue--dark;
+    border-radius: $T / 2;
+    color: $white;
+    display: block;
+    font-size: .9em;
+    min-height: $N * 2; // line-height and top/bottom padding
+    line-height: $N;
+    overflow: hidden;
+    padding: $N / 2;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+}

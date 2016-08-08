@@ -1,0 +1,11 @@
+{
+  "name": "nasa-gsfc",
+  "version": "0.0.1",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "french-dip": "*",
+    "imagesloaded": "^4.1.0",
+    "normalize-css": "^4.1.1",
+    "pure": "^0.6.0"
+  }
+}
